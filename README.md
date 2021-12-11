@@ -1,21 +1,15 @@
-# fastapi_sqlalchemy_alembic
+# gtest
 
-Fastapi, pydantic, Sqlalchemy, postgresql, Alembic(for migrations), pgAdmin, JWT.
+Unit testing C code with gtest
 
 
 ## Установка
 
-    docker-compose build
+    mkdir build
+    cd build
+    cmake ..
+    make
 
 ## Запуск
 
-    docker-compose up
-
-## Документация
-
-    swagger - http://localhost:8000/docs
-    redoc - http://localhost:8000/redoc
-
-## Pgadmin4
-
-    http://localhost:5050 (подождать при запуске; ввести кредиты из docker-compose)
+    ctest
